@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<wedding>
+    <tblweddingcategories>
+        <id>1</id>
+        <wedding_type>Classic</wedding_type>
+        <price>16500.00</price>
+        <preview_image>classic.jpg</preview_image>
+        <feature>
+            <item>Hair And Make Up</item>
+            <item>Appetizers</item>
+            <item>DJ Services</item>
+        </feature>
+    </tblweddingcategories>
+    <tblweddingcategories>
+        <id>2</id>
+        <wedding_type>Elegant</wedding_type>
+        <price>20000.00</price>
+        <preview_image>elegnant.jpg</preview_image>
+        <feature>
+            <item>Hair And Make Up</item>
+            <item>Appetizers</item>
+            <item>DJ Services</item>
+        </feature>
+    </tblweddingcategories>
+    <tblweddingcategories>
+        <id>3</id>
+        <wedding_type>Premier</wedding_type>
+        <price>24000.00</price>
+        <preview_image>premier.jpg</preview_image>
+        <feature>
+            <item>Hair And Make Up</item>
+            <item>Appetizers</item>
+            <item>DJ Services</item>
+        </feature>
+    </tblweddingcategories>
+    <tblweddingcategories>
+        <id>4</id>
+        <wedding_type>Gold</wedding_type>
+        <price>39500.00</price>
+        <preview_image>timelessgold.jpg</preview_image>
+        <feature>
+            <item>Hair And Make Up</item>
+            <item>Appetizers</item>
+            <item>DJ Services</item>
+        </feature>
+    </tblweddingcategories>
+    <tblweddingcategories>
+        <id>5</id>
+        <wedding_type>Elite</wedding_type>
+        <price>52000.00</price>
+        <preview_image>elite.jpg</preview_image>
+        <feature>
+            <item>Hair And Make Up</item>
+            <item>Appetizers</item>
+            <item>DJ Services</item>
+        </feature>
+    </tblweddingcategories>
+</wedding>
