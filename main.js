@@ -41,7 +41,7 @@ function myFunction (xml) {
     for (let y of i.getElementsByTagName('feature')) {
       for (let z of y.getElementsByTagName('item')) {
         console.log(z.childNodes[0].nodeValue)
-        section += `<div class="box-item">
+        section += `<div class="box-item  rounded-pill p-1">
               <span class="sub m-2">${z.childNodes[0].nodeValue}</span>
           </div>`
       }
