@@ -868,7 +868,7 @@ body::-webkit-scrollbar-thumb:hover {
 /* banner-section */
 #banner-section {
   position: relative;
-  padding-top: 247px;
+  padding-top: 180px;
   background-color: #280b70;
   background-image: url(../../image/bgWedding.jpg);
   /* background-size: 117%; */
