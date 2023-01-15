@@ -1019,3 +1019,7 @@ body::-webkit-scrollbar-thumb:hover {
   transition: all 0.3s ease-in;
   display: inline-block;
 }
+@font-face {
+  font-family: lovers;
+  src: url(../css/LoveLight-Regular.ttf);
+}
