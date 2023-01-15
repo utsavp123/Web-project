@@ -414,7 +414,7 @@ body::-webkit-scrollbar-thumb:hover {
   }
 }
 .navbar-collapse .main-menu li a {
-  padding: 40px 15px;
+  padding: 30px 15px;
   font-weight: 800;
   font-family: var(--body-font);
   font-size: 18px;
@@ -649,7 +649,7 @@ body::-webkit-scrollbar-thumb:hover {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 9999;
+  z-index: 11;
   background-color: #00003e;
   box-shadow: 0px 3px 10px 0px rgb(0 0 0 / 30%);
   border-bottom: 1px solid rgb(255 255 255 / 25%);
@@ -703,7 +703,6 @@ body::-webkit-scrollbar-thumb:hover {
   }
 }
 
-
 @keyframes spin {
   100% {
     -webkit-transform: rotate(360deg);
@@ -719,7 +718,7 @@ body::-webkit-scrollbar-thumb:hover {
   font-size: 18px;
   line-height: 27px;
   transition: all 0.5s;
-  padding: 11px 32px;
+  padding: 11px 10px;
   background: linear-gradient(351.09deg, #f029a0 4.36%, #f0b000 117.5%);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
@@ -872,7 +871,7 @@ body::-webkit-scrollbar-thumb:hover {
   padding-top: 247px;
   background-color: #280b70;
   background-image: url(../../image/bgWedding.jpg);
-  background-size: 117%;
+  /* background-size: 117%; */
   background-repeat: no-repeat;
   z-index: 0;
 }
@@ -1005,4 +1004,18 @@ body::-webkit-scrollbar-thumb:hover {
 #how-works-section .obj-rel,
 #how-works-section .obj-alt {
   position: relative;
+}
+
+@media (min-width: 768px) {
+  .top-100 {
+    top: 50px !important;
+  }
+}
+
+.blueBtn {
+  box-shadow: inset 0px 0px 5px 3px #00a2ff;
+  padding: 5px 15px;
+  border-radius: 50px;
+  transition: all 0.3s ease-in;
+  display: inline-block;
 }

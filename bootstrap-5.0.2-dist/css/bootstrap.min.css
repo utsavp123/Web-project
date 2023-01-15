@@ -3005,7 +3005,7 @@ input[type='submit'].btn-block {
   position: relative;
   height: 0;
   overflow: hidden;
-  transition: height 0.35s ease;
+  transition: height 0s ease;
 }
 @media (prefers-reduced-motion: reduce) {
   .collapsing {
@@ -5574,7 +5574,7 @@ a.close.disabled {
   flex-direction: column;
   width: 100%;
   pointer-events: auto;
-  background-color: #fff;
+  background-color: var(--body-bg);
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;
@@ -9539,38 +9539,38 @@ a.text-dark:hover {
 }
 
 /* Browse Tournaments */
-#tournaments-section {
+#wedding-section {
   background-image: url(../images/tournaments-bg.png);
   background-size: 100%;
   background-repeat: no-repeat;
   background-color: #100649;
 }
-#tournaments-section .section-header p {
+#wedding-section .section-header p {
   margin: auto 15%;
 }
-#tournaments-section .single-input input {
+#wedding-section .single-input input {
   padding: 15px 20px;
   background: transparent;
   color: var(--body-color);
 }
-#tournaments-section .single-input li,
-#tournaments-section .single-input span {
+#wedding-section .single-input li,
+#wedding-section .single-input span {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
 }
-#tournaments-section .single-input .nice-select {
+#wedding-section .single-input .nice-select {
   padding: 8px 15px;
   height: inherit;
   font-weight: 400;
 }
-#tournaments-section .single-input .nice-select .list {
+#wedding-section .single-input .nice-select .list {
   width: 100%;
   background-color: #0d0d59;
   padding-top: 15px;
 }
-#tournaments-section .single-input .nice-select,
-#tournaments-section .single-input input {
+#wedding-section .single-input .nice-select,
+#wedding-section .single-input input {
   width: 100%;
   display: block;
   border: 1px solid #7363d3;
@@ -9578,61 +9578,61 @@ a.text-dark:hover {
   margin-top: 10px;
   font-size: 14px;
 }
-#tournaments-section .single-item.mp-none {
+#wedding-section .single-item.mp-none {
   margin-bottom: 0;
 }
-#tournaments-section .single-item {
+#wedding-section .single-item {
   background-color: #0e063d;
   padding: 20px;
   border: 1px solid #edb8ff;
   border-radius: 5px;
   margin-bottom: 10px;
 }
-#tournaments-section .single-item h4 {
+#wedding-section .single-item h4 {
   text-transform: uppercase;
 }
-#tournaments-section .single-item .bg {
+#wedding-section .single-item .bg {
   background: #21156e;
   border-radius: 5px;
   margin-right: 30px;
   padding: 10px 15px;
 }
-#tournaments-section .single-item .bg .time {
+#wedding-section .single-item .bg .time {
   color: #00fadf;
 }
-#tournaments-section .single-item .title-bottom {
+#wedding-section .single-item .title-bottom {
   border-bottom: 1px solid #32286d;
   margin-top: 20px;
   padding-bottom: 35px;
 }
-#tournaments-section .single-item .single-box {
+#wedding-section .single-item .single-box {
   margin: 15px 0 0;
 }
-#tournaments-section .single-item .single-box .box-item {
+#wedding-section .single-item .single-box .box-item {
   border: 1px solid #281d61;
   margin-right: 19px;
   text-align: center;
   padding-bottom: 15px;
   padding-top: 15px;
 }
-#tournaments-section .single-item .single-box .box-item .head {
+#wedding-section .single-item .single-box .box-item .head {
   font-size: 10px;
   line-height: 15px;
   text-transform: uppercase;
 }
-#tournaments-section .single-item .single-box .box-item .sub {
+#wedding-section .single-item .single-box .box-item .sub {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 13px;
   line-height: 19px;
   color: #00fadf;
 }
-#tournaments-section .single-item .prize-area {
+#wedding-section .single-item .prize-area {
   border: 1px solid #281d61;
   width: 100%;
   height: 100%;
 }
-#tournaments-section .single-item .prize-area .prize {
+#wedding-section .single-item .prize-area .prize {
   font-size: 14px;
   line-height: 21px;
   color: #75d115;
@@ -9640,20 +9640,20 @@ a.text-dark:hover {
   display: block;
   margin-bottom: 6px;
 }
-#tournaments-section .single-item .prize-area .prize img {
+#wedding-section .single-item .prize-area .prize img {
   margin-right: 5px;
 }
-#tournaments-section .single-item .contain-area {
+#wedding-section .single-item .contain-area {
   margin: 60px auto;
 }
-#tournaments-section .single-item .prize-area .cmn-btn {
+#wedding-section .single-item .prize-area .cmn-btn {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
   margin: 10px 0 4px;
 }
-#tournaments-section .single-item .prize-area p {
+#wedding-section .single-item .prize-area p {
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
@@ -10311,7 +10311,7 @@ a.text-dark:hover {
 }
 
 /* Inner Page Start */
-#tournaments-section.tournaments .section-header {
+#wedding-section.tournaments .section-header {
   margin-top: 7px;
 }
 #banner-section.inner-banner.tournaments {
@@ -12240,7 +12240,7 @@ a.text-dark:hover {
     flex-grow: 0 !important;
   }
   .navbar-collapse .main-menu li a {
-    padding: 40px 10px;
+    padding: 30px 10px;
   }
   #header-section .navbar {
     margin: 0 8px;
@@ -12258,7 +12258,7 @@ a.text-dark:hover {
   #banner-section .banner-content .ani-illu .right-2 {
     right: -26%;
   }
-  #tournaments-section .single-item .single-box .box-item {
+  #wedding-section .single-item .single-box .box-item {
     margin-right: 5px;
   }
   #banner-section.inner-banner {
@@ -12367,7 +12367,7 @@ a.text-dark:hover {
   #how-works-section .overlay .cmn-btn {
     margin-top: 40px;
   }
-  #tournaments-section .single-item .single-box {
+  #wedding-section .single-item .single-box {
     padding-bottom: 20px;
   }
   #banner-section.inner-banner.shop-details {
@@ -12412,7 +12412,7 @@ a.text-dark:hover {
   #header-section .right-area {
     right: 8%;
   }
-  #tournaments-section .single-item .single-box .box-item .head {
+  #wedding-section .single-item .single-box .box-item .head {
     font-size: 12px;
     line-height: 15px;
   }
@@ -12571,14 +12571,14 @@ a.text-dark:hover {
   #shop-content .shop-details-content .right-item {
     margin-top: 20px;
   }
-  #tournaments-section .single-item .top-img {
+  #wedding-section .single-item .top-img {
     margin: 0 auto;
     margin-bottom: 30px;
   }
-  #tournaments-section .single-input {
+  #wedding-section .single-input {
     margin-top: 20px;
   }
-  #tournaments-section .mp-none {
+  #wedding-section .mp-none {
     margin-top: -20px;
   }
   #players-week-section .single-item.mid-area {
@@ -12819,7 +12819,7 @@ a.text-dark:hover {
   #call-action .right-area {
     text-align: center;
   }
-  #tournaments-section .single-item .contain-area {
+  #wedding-section .single-item .contain-area {
     margin: 30px auto;
   }
   #tournaments-content .magnific-area a {
@@ -12878,10 +12878,10 @@ a.text-dark:hover {
 }
 
 @media (max-width: 480px) {
-  #tournaments-section .single-item .single-box {
+  #wedding-section .single-item .single-box {
     display: grid !important;
   }
-  #tournaments-section .single-item .single-box .box-item {
+  #wedding-section .single-item .single-box .box-item {
     margin: 5px 0;
     display: grid;
   }
@@ -12922,13 +12922,13 @@ a.text-dark:hover {
   #how-works-section .obj-alt::before {
     display: none;
   }
-  #tournaments-section .single-item .title-bottom {
+  #wedding-section .single-item .title-bottom {
     display: grid !important;
   }
-  #tournaments-section .single-item .bg {
+  #wedding-section .single-item .bg {
     margin: 10px 0;
   }
-  #tournaments-section .single-item .mid-area {
+  #wedding-section .single-item .mid-area {
     margin: 0 auto;
   }
   #banner-section.inner-banner .bottom-item .draw-counter .date-area h6 {

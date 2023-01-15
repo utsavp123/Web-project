@@ -4,56 +4,76 @@
     <tblweddingcategories>
         <id>1</id>
         <wedding_type>Classic</wedding_type>
-        <price>16500.00</price>
+        <offer_price>16500.00</offer_price>
+        <orignal_price>19999.00</orignal_price>
         <preview_image>classic.jpg</preview_image>
         <feature>
             <item>Hair And Make Up</item>
             <item>Appetizers</item>
             <item>DJ Services</item>
         </feature>
+        <description> A decoration is anything used to make something more attractive or festive. If you’re
+                                    having a Valentine’s Day party, drape your house in red and pink decorations.
+                                    Decoration is also a type of honor, like a soldier's medal or stripe.</description>
     </tblweddingcategories>
     <tblweddingcategories>
         <id>2</id>
         <wedding_type>Elegant</wedding_type>
-        <price>20000.00</price>
+        <offer_price>20000.00</offer_price>
+        <orignal_price>25999.00</orignal_price>
         <preview_image>elegnant.jpg</preview_image>
         <feature>
-            <item>Hair And Make Up</item>
+            <item>Photographer</item>
             <item>Appetizers</item>
-            <item>DJ Services</item>
+            <item>Decorations</item>
         </feature>
+        <description> A decoration is anything used to make something more attractive or festive. If you’re
+                                    having a Valentine’s Day party, drape your house in red and pink decorations.
+                                    Decoration is also a type of honor, like a soldier's medal or stripe.</description>
     </tblweddingcategories>
     <tblweddingcategories>
         <id>3</id>
         <wedding_type>Premier</wedding_type>
-        <price>24000.00</price>
+        <offer_price>24000.00</offer_price>
+        <orignal_price>29999.00</orignal_price>
         <preview_image>premier.jpg</preview_image>
         <feature>
-            <item>Hair And Make Up</item>
-            <item>Appetizers</item>
-            <item>DJ Services</item>
+            <item>Invitations &#38; Accessories</item>
+            <item>DJ &#38; MC Services</item>
+            <item>Wedding Cake</item>
         </feature>
+        <description> A decoration is anything used to make something more attractive or festive. If you’re
+                                    having a Valentine’s Day party, drape your house in red and pink decorations.
+                                    Decoration is also a type of honor, like a soldier's medal or stripe.</description>
     </tblweddingcategories>
     <tblweddingcategories>
         <id>4</id>
         <wedding_type>Gold</wedding_type>
-        <price>39500.00</price>
+        <offer_price>39500.00</offer_price>
+        <orignal_price>45999.00</orignal_price>
         <preview_image>timelessgold.jpg</preview_image>
         <feature>
-            <item>Hair And Make Up</item>
-            <item>Appetizers</item>
-            <item>DJ Services</item>
+            <item>Bar Service</item>
+            <item>Reception Decor</item>
+            <item>DJ &#38; MC Services</item>
         </feature>
+        <description> A decoration is anything used to make something more attractive or festive. If you’re
+                                    having a Valentine’s Day party, drape your house in red and pink decorations.
+                                    Decoration is also a type of honor, like a soldier's medal or stripe.</description>
     </tblweddingcategories>
     <tblweddingcategories>
         <id>5</id>
         <wedding_type>Elite</wedding_type>
-        <price>52000.00</price>
+        <offer_price>52000.00</offer_price>
+        <orignal_price>59999.00</orignal_price>
         <preview_image>elite.jpg</preview_image>
         <feature>
-            <item>Hair And Make Up</item>
-            <item>Appetizers</item>
-            <item>DJ Services</item>
+            <item>Champagne &#38; Cider Toast</item>
+            <item>Invitations &#38; Accessories</item>
+            <item>Chairs &#38; Linens</item>
         </feature>
+        <description> A decoration is anything used to make something more attractive or festive. If you’re
+                                    having a Valentine’s Day party, drape your house in red and pink decorations.
+                                    Decoration is also a type of honor, like a soldier's medal or stripe.</description>
     </tblweddingcategories>
 </wedding>

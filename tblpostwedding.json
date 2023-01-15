@@ -1,0 +1,148 @@
+{
+  "data": [
+    {
+      "id": "31",
+      "title": "MR. &amp; MRS. Atwood",
+      "description": "92-acre Tuscan-inspired estate offering indoor and outdoor event spaces, as well as a Four Diamond inn and renowned restaurant.",
+      "preview_image": "wdbnt.jpg",
+      "location": "Vintners Resort",
+      "status": "1",
+      "wedding_date": "03/24/2022",
+      "wedding_type": "Elite",
+      "date_created": "March 8, 2022, 11:23 am",
+      "date_published": "April 13, 2022, 6:16 pm"
+    },
+    {
+      "id": "35",
+      "title": "MR. MRS Redmond",
+      "description": "Mountain beauty meets warm sophistication at this resort, which boasts a luxury lodge, chic hotel, two country clubs, and plenty of indoor and outdoor wedding venues from refined ballrooms to lush gardens to shabby-chic wood pavilions.",
+      "preview_image": "wdnf8.JPG",
+      "location": "Crystal Springs Resort",
+      "status": "1",
+      "wedding_date": "03/16/2022",
+      "wedding_type": "Elite",
+      "date_created": "March 4, 2022, 11:44 am",
+      "date_published": "April 13, 2022, 6:10 pm"
+    },
+    {
+      "id": "45",
+      "title": "MR. MRS  Graham",
+      "description": "Faithful replica of a classic medieval castle, complete with turrets, a drawbridge, a vast collection of Medieval and Renaissance artifacts, and a romantic garden overlooking the Atlantic.",
+      "preview_image": "wdnf7.JPG",
+      "location": "Hammond Castle Museum",
+      "status": "1",
+      "wedding_date": "02/20/2022",
+      "wedding_type": "Gold",
+      "date_created": "March 4, 2022, 11:44 am",
+      "date_published": "April 13, 2022, 6:09 pm"
+    },
+    {
+      "id": "50",
+      "title": "MR. MRS. Yorke",
+      "description": "Fairy-tale Tudor Revival mansion and lakeside chapel surrounded by 100 acres of formal gardens and 900 acres of natural woodlands.",
+      "preview_image": "wdnf9.JPG",
+      "location": "The Skylands Manor",
+      "status": "1",
+      "wedding_date": "03/23/2022",
+      "wedding_type": "Elite",
+      "date_created": "March 4, 2022, 11:44 am",
+      "date_published": "April 13, 2022, 6:13 pm"
+    },
+    {
+      "id": "52",
+      "title": "MR. &amp; MRS. Pearson",
+      "description": "Beautifully restored historic home with elegant indoor event spaces, a Parterre Garden, and a lovely courtyard strung with market lights that's perfect for intimate celebrations.",
+      "preview_image": "wdnf4.JPG",
+      "location": "Beauregard-Keyes House",
+      "status": "1",
+      "wedding_date": "04/30/2018",
+      "wedding_type": "Elite",
+      "date_created": "March 8, 2022, 11:29 am",
+      "date_published": "April 13, 2022, 6:17 pm"
+    },
+    {
+      "id": "55",
+      "title": "MR. &amp; MRS. Raftery",
+      "description": "Relaxed and refined private complex on 24 acres along the Carmel River where you can wed, dine, and stay.",
+      "preview_image": "wdnf.JPG",
+      "location": "Gardener Ranch",
+      "status": "1",
+      "wedding_date": "02/20/2022",
+      "wedding_type": "Elite",
+      "date_created": "March 4, 2022, 11:44 am",
+      "date_published": "April 13, 2022, 6:18 pm"
+    },
+    {
+      "id": "57",
+      "title": "MR. &amp; MRS. Brower",
+      "description": "Exchange vows in a natural woodland &ldquo;cathedral&rdquo; surrounded by towering pines, followed by cocktails served from a charming tipi and a delightful tented reception in the heart of the woods.",
+      "preview_image": "wdnf5.JPG",
+      "location": "Blue Moon Rising",
+      "status": "1",
+      "wedding_date": "04/18/2022",
+      "wedding_type": "Gold",
+      "date_created": "March 8, 2022, 11:29 am",
+      "date_published": "April 13, 2022, 6:17 pm"
+    },
+    {
+      "id": "60",
+      "title": "MR. &amp; MRS. Reid",
+      "description": "Romantic 1929 Art Deco, blufftop mansion with indoor and outdoor event venues that offer fantastic ocean and shoreline views.",
+      "preview_image": "wdnf6.JPG",
+      "location": "Yankee Clipper Inn",
+      "status": "1",
+      "wedding_date": "02/20/2022",
+      "wedding_type": "Elite",
+      "date_created": "March 4, 2022, 11:44 am",
+      "date_published": "April 13, 2022, 6:06 pm"
+    },
+    {
+      "id": "62",
+      "title": "MR. &amp; MRS. Squires",
+      "description": "Magnificent 102-acre coastal resort on a bluff overlooking the stunning Palos Verdes Peninsula, boasting landscaped grounds, verdant lawns, and warm, elegant ballrooms with terraces&mdash;all with jaw-dropping views.",
+      "preview_image": "wdnf12.JPG",
+      "location": "Terranea Resort",
+      "status": "1",
+      "wedding_date": "04/03/2022",
+      "wedding_type": "Premier",
+      "date_created": "March 8, 2022, 11:29 am",
+      "date_published": "April 13, 2022, 7:31 pm"
+    },
+    {
+      "id": "65",
+      "title": "MR. &amp; MRS. Jones",
+      "description": "Relaxed, full-service resort presents an alluring choices of indoor and outdoor venues, from al fresco ceremonies with sweeping Pacific vistas to luxe reception ballrooms with classic columns and hand-blown glass chandeliers.",
+      "preview_image": "wdnf10.JPG",
+      "location": "Hyatt Regency Huntington Beach Resort and Spa",
+      "status": "1",
+      "wedding_date": "04/05/2022",
+      "wedding_type": "Elite",
+      "date_created": "March 4, 2022, 11:44 am",
+      "date_published": "April 13, 2022, 6:14 pm"
+    },
+    {
+      "id": "67",
+      "title": "MR. &amp; MRS. Russell",
+      "description": "This Rockies hideaway boasts incredible mountain vistas and streamside paths, with multiple venue options for al fresco events, from the Shaker, an open-air platform tented with sailcloth, to the Highbanker Beach, a creekside lounge area perfect for cocktails and bonfires.",
+      "preview_image": "wdnf2.JPG",
+      "location": "Blackstone Rivers Ranch",
+      "status": "1",
+      "wedding_date": "03/31/2022",
+      "wedding_type": "Elegant",
+      "date_created": "March 8, 2022, 11:29 am",
+      "date_published": "April 13, 2022, 6:18 pm"
+    },
+    {
+      "id": "69",
+      "title": "MR. &amp; MRS. Smith",
+      "description": "This rustic farmstead getaway offers picture-perfect event spaces, including a hilltop pergola and the Chimney Pond Meadow, surrounded by neat rows of Christmas trees, and a stylishly rustic reception barn highlighted by Tuscan lights and globe chandeliers.",
+      "preview_image": "wdnf11.JPG",
+      "location": "Sawyer Family Farmstead",
+      "status": "1",
+      "wedding_date": "03/29/2018",
+      "wedding_type": "Elite",
+      "date_created": "March 8, 2022, 11:50 am",
+      "date_published": "April 13, 2022, 6:16 pm"
+    }
+  ]
+}

@@ -8,9 +8,17 @@
     <title>Document</title>
     <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/style.css">
-    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/fontawesome.min.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.2.1-web/css/all.css">
     <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
     <script src="./bootstrap-5.0.2-dist/js/jquery-3.6.3.min.js"></script>
+
+
+    <style>
+        body::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -19,19 +27,19 @@
             <div class="container">
                 <div class="row d-flex header-area">
                     <div class="logo-section flex-grow-1 d-flex align-items-center">
-                        <a class="site-logo site-title" href="index-2.html"><img src="image/pngwing.com.png"
-                                height="50px " width="50px" alt="site-logo"></a>
+                        <a class="site-logo site-title"><img src="image/pngwing.com.png" height="50px " width="50px"
+                                alt="site-logo"></a>
                     </div>
                     <button class="navbar-toggler ml-auto collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-bars"></i>
+                        <i class="fas fa-bars nav-show"></i>
                     </button>
                     <nav class="navbar navbar-expand-lg p-0">
-                        <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                        <div class="navbar-collapse showclass collapse" id="navbarSupportedContent1">
                             <ul class="navbar-nav main-menu ml-auto">
-                                <li><a href="index-2.html" class="active">Home</a></li>
-                                <li class="menu_has_children"><a>PRICING</a>
+                                <li><a class="active">Home</a></li>
+                                <li class=""><a>PRICING</a>
                                     <ul class="sub-menu">
                                         <li><a>Classic</a></li>
                                         <li><a>Elegant</a></li>
@@ -40,16 +48,19 @@
                                         <li><a>Elite </a></li>
                                     </ul>
                                 </li>
-                                <li class="menu_has_children"><a>Inspiration</a>
+                                <li class=""><a>Inspiration</a>
                                 </li>
-                                <li><a href="contact.html">Gallery</a></li>
-                                <li><a href="contact.html">Contact us</a></li>
+                                <li><a>Gallery</a></li>
+                                <li><a>Contact us</a></li>
+                                <li class="" >
+                                    <a class=""><span class="cmn-btn py-1" style="
+                                        line-height: inherit;
+                                    ">Login</span> </a>
+                                </li>
                             </ul>
                         </div>
                     </nav>
                     <div class="right-area header-action d-flex align-items-center">
-                        <a href="login.html" class="login-btn">Login</a>
-                        <a href="registration.html" class="cmn-btn">Join Now!</a>
                     </div>
                 </div>
             </div>
@@ -66,7 +77,7 @@
                                 <h1>Starts Here</h1>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, corrupti.</p>
                                 <div class="btn-play d-flex justify-content-center align-items-center">
-                                    <a href="registration.html" class="cmn-btn">Get Started</a>
+                                    <a class="cmn-btn">Get Started</a>
                                     <!-- <a href="https://www.youtube.com/watch?v=MJ0zpsWQ_XM" class="mfp-iframe popupvideo">
                                         <img src="images/play-icon.png" alt="play">
                                     </a> -->
@@ -88,7 +99,7 @@
                 </div>
                 <div class="ani-illu">
                     <img class="left-1 wow fadeInUp" style=" visibility: visible; animation-name: fadeInUp;"
-                        src="image/—Pngtree—indian wedding couple outfits gown_8816311.png" alt="image">
+                        src="image/jodi.png" alt="image">
                     <img class="right-2 wow fadeInUp" style=" visibility: visible; animation-name: fadeInUp;"
                         src="image/pngtree-wedding-girl-for-haldi-cute-indian-bride-illustration-vector-hd-images-png-image_6491288.png"
                         alt="image">
@@ -96,7 +107,7 @@
             </div>
         </div>
     </section>
-    <section id="tournaments-section">
+    <section id="wedding-section">
         <div class="overlay pt-120 pb-120">
             <div class="container wow fadeInUp">
                 <div class="row d-flex justify-content-center">
@@ -163,7 +174,7 @@
                     <div class="col-lg-10">
                         <div class="section-header text-center">
                             <h2 class="title">Take the Stress Out of Planning</h2>
-                          
+
                         </div>
                     </div>
                 </div>
@@ -220,16 +231,18 @@
                                     alt="image">
                             </div>
                             <h5>Budget</h5>
-                            <p>A plan to show how much money a person or organization will earn and how much they will need or be able to spend</p>
+                            <p>A plan to show how much money a person or organization will earn and how much they will
+                                need or be able to spend</p>
                         </div>
                     </div>
                     <div class=" col-md-6 col-sm-6">
                         <div class="single-item text-center">
                             <div class="img-area">
-                                <img  style="
+                                <img style="
                                 filter:invert(1);
                                 height: 70px;
-                            "  src="image/vendor-manager-102fbe8fdbab3e176a6d29bd05c6f26dcd35cfa0f55ff50b1bfd9e70c8fdcdda.svg" alt="image">
+                            " src="image/vendor-manager-102fbe8fdbab3e176a6d29bd05c6f26dcd35cfa0f55ff50b1bfd9e70c8fdcdda.svg"
+                                    alt="image">
                             </div>
                             <h5>Vendor Manager</h5>
                             <p>A company or person that sells a particular product.</p>
@@ -240,8 +253,91 @@
             </div>
         </div>
     </section>
-    <script src="./main.js"></script>
+    <section id="featured-products" class="pt-120 pb-120">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 d-flex align-items-center">
+                    <div class="section-header text-center">
+                        <h2 class="title">THE LATEST INSPIRATION</h2>
+                        <p>DISCOVER THE BEST IDEAS, TIPS AND ARTICLES TO INSPIRE YOUR WEDDING.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row cus-m justify-content-center" id="postWedding" style="
+            position: relative;
+        ">
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-item">
+                        <div class="img-area text-center">
+                            <img src="image/events/wdbnt.jpg" alt="image">
+                        </div>
+                        <div class=" text-center">
+                            <h5>MR. &amp; MRS. Atwood</h5>
+                            <p class="text-sm mt-1">92-acre Tuscan-inspired estate offering indoor and outdoor event
+                                spaces, as well as a Four Diamond inn and renowned restaurant.</p>
+                            <p class="mt-2"> <span class="fas fa-location-dot"></span> Vintners Resort</p>
+                            <p>03/24/2022</p>
+                            <div class="mt-2">
+                                <h5>€149.90</h5>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+            <div class="modal-content" id="modalContent">
+                <div class="modal-header">
+                    <h5 class="modal-title w-100 text-center" id="exampleModalLabel">Classic</h5>
+                    <!-- <button type="button" class="close" data-bs-dismiss="modal">&times;</button> -->
+                    <span aria-hidden="true" data-bs-dismiss="modal">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row m-0">
+                        <div class=" col-lg-6  ">
+                            <img class=" rounded" src="./image/classic.jpg" alt="">
+                        </div>
+                        <div class=" col-lg-6 ">
+                            <div>
+                                <p>A decoration is anything used to make something more attractive or festive. If you’re
+                                    having a Valentine’s Day party, drape your house in red and pink decorations.
+                                    Decoration is also a type of honor, like a soldier's medal or stripe.</p>
+                            </div>
+                            <div class="row my-3">
+                                <h6 class="blueBtn m-2  ">Hair And Make Up</h6>
+                                <h6 class="blueBtn m-2 ">Appetizers</h6>
+                                <h6 class="blueBtn m-2 ">DJ Services</h6>
+                            </div>
+                            <h5> <del>$29000 </del> $24000</h5>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+<script src="./main.js"></script>
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script> -->
+<script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+<script src="bootstrap-5.0.2-dist/js/fontawesome.js"></script>
 
 
 </html>
