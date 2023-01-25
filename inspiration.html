@@ -22,7 +22,7 @@
 </head>
 
 <body style="
-    overflow-x: hidden;
+    
 ">
     <header id="header-section" class="animated fadeInDown header-fixed">
         <div class="overlay">
@@ -69,7 +69,7 @@
             </div>
         </div>
     </header>
-    <section id="banner-section">
+    <!-- <section id="banner-section">
         <div class="banner-content d-flex align-items-center">
             <div class="container">
                 <div class="row justify-content-center">
@@ -84,22 +84,10 @@
                                     Wedding.</p>
                                 <div class="btn-play d-flex justify-content-center align-items-center">
                                     <a class="cmn-btn">Get Started</a>
-                                    <!-- <a href="https://www.youtube.com/watch?v=MJ0zpsWQ_XM" class="mfp-iframe popupvideo">
-                                        <img src="images/play-icon.png" alt="play">
-                                    </a> -->
+
                                 </div>
                             </div>
-                            <!-- <div class="row justify-content-center">
-                                <div class="col-lg-12">
-                                    <div class="row justify-content-center">
-                                        <div class="col-lg-6">
-                                            <div class="bottom-area text-center">
-                                                <img src="image/ring.png" alt="banner-vs" style="height: 200px !important; ">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> -->
+
                         </div>
                     </div>
                 </div>
@@ -120,55 +108,11 @@
                     <div class="col-lg-8 text-center">
                         <div class="section-header">
                             <h2 class="title">OUR WEDDING PACKAGES</h2>
-                            <!-- <p>Find the perfect tournaments for you. Head to head matches
-                                where you pick the game, rules and prize.</p> -->
+
                         </div>
                     </div>
                 </div>
-                <!-- <div class="row mb-40 mp-none">
-                    <div class="col-lg-3 col-md-3">
-                        <div class="single-input">
-                            <span>Status</span>
-                            <select>
-                                <option>Status</option>
-                                <option value="1">Upcoming 1</option>
-                                <option value="2">Upcoming 2</option>
-                                <option value="3">Upcoming 3</option>
-                                <option value="5">Upcoming 5</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3">
-                        <div class="single-input">
-                            <span>Search</span>
-                            <input type="text" placeholder="Search">
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3">
-                        <div class="single-input">
-                            <span>Team Size</span>
-                            <select>
-                                <option>Select Team Size</option>
-                                <option value="1">Size 1</option>
-                                <option value="2">Size 2</option>
-                                <option value="3">Size 3</option>
-                                <option value="4">Size 4</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3">
-                        <div class="single-input">
-                            <span>Entry Fee</span>
-                            <select>
-                                <option>Select Entry Fee</option>
-                                <option value="1">50</option>
-                                <option value="2">60</option>
-                                <option value="3">70</option>
-                                <option value="4">80</option>
-                            </select>
-                        </div>
-                    </div>
-                </div> -->
+
                 <div id="section"></div>
             </div>
         </div>
@@ -258,7 +202,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <section id="featured-products" class="pt-120 pb-120">
         <div class="container">
             <div class="row justify-content-center">
@@ -337,9 +281,89 @@
         </div>
     </div>
 </body>
-<script src="./main.js"></script>
+<script>
 
+    const JSONdata = new XMLHttpRequest()
+    JSONdata.onload = function () {
+        jsonDataFetch(this)
+    }
+    JSONdata.open('GET', 'tblpostwedding.json')
+    JSONdata.send()
 
+    function jsonDataFetch(xml) {
+        tblpostwedding = xml.responseText
+        console.log(JSON.parse(tblpostwedding).data)
+        section = ''
+        section += `<div id="accordion" class="row justify-content-around w-100">`
+        section += `</div>`
+        document.getElementById('postWedding').innerHTML = section
+
+        for (let i of JSON.parse(tblpostwedding).data) {
+            let id = 'collapse' + i.wedding_type
+            if (!document.getElementById(id)) {
+                section1 = `<div class="cmn-btn btn-collapse col-md col-5 m-1">
+          <div class="text-center">
+              <a class="btn" data-bs-toggle="collapse" style="
+              color: white;
+          " href="#collapse${i.wedding_type}">
+              ${i.wedding_type}
+              </a>
+          </div>
+         
+      </div>
+      
+      <div id="collapse${i.wedding_type}" class="collapse top-100" data-bs-parent="#accordion" style="position: absolute;z-index: -1;top: 110px;left: 0px;right: 0px;min-height: 400px;">
+      <div class="card-body" >
+          <div class="row cus-m" id="inner${i.wedding_type}">
+              
+          </div>
+      </div>
+  </div>`
+                document.getElementById('accordion').innerHTML += section1
+            }
+        }
+
+        for (let i of JSON.parse(tblpostwedding).data) {
+            let id = 'collapse' + i.wedding_type
+            if (document.getElementById(id)) {
+                section = `<div class="col-lg-3 col-md-6 mt-3">
+        <div class="single-item" style="
+        box-shadow: 0px 0px 12px 0px #4609c3;
+     ">
+            <div class="img-area text-center">
+                <img class="img-area m-0" src="image/events/${i.preview_image}" alt="image">
+            </div>
+            <div class=" text-center">
+                <h5 class="my-2">${i.title}</h5>
+                <p class="text-sm mt-1" style="max-height:60px; overflow:hidden ">${i.description}</p>
+                 <p class="mt-2"> <span class="fas fa-location-dot"></span> ${i.location}</p>
+                 <p class="text-sm mt-1"><span class="text-sm fas fa-calendar-alt"></span> ${i.wedding_date}</p>
+                  <div class="mt-2">
+                   <h5>${i.wedding_type}</h5>
+                </div>
+                </div>
+          </div>
+        </div>`
+            }
+            id = 'inner' + i.wedding_type
+            document.getElementById(id).innerHTML += section
+            $(document).ready(() => {
+                $('.btn-collapse').click(() => {
+                    // val = $(document).scrollTop().valueOf()
+                    // window.scrollTo(0, val + 200)
+                })
+
+                $('#collapseElite').first().addClass('show')
+            })
+        }
+    }
+    $(document).ready(() => {
+  $('.nav-show').click(() => {
+    $('.showclass').fadeToggle('show')
+    //  $(".show").fadeToggle()
+  })
+})
+</script>
 <script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
 <script src="bootstrap-5.0.2-dist/js/fontawesome.js"></script>
 

@@ -9540,7 +9540,7 @@ a.text-dark:hover {
 
 /* Browse Tournaments */
 #wedding-section {
-  background-image: url(../images/tournaments-bg.png);
+  background-image: url(../../image/tournaments-bg.png);
   background-size: 100%;
   background-repeat: no-repeat;
   background-color: #100649;
@@ -10240,7 +10240,7 @@ a.text-dark:hover {
 
 /* About Us Start */
 #about-us-section .overlay {
-  background-image: url(../images/about-us-bg.png);
+  background-image: url(../../image/about-us-bg.png);
   background-repeat: no-repeat;
   background-position: bottom;
   padding-bottom: 440px;

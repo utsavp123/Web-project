@@ -1,8 +1,8 @@
 // Data loading ================================================
 let tblweddingcategories
 let tblpostwedding
-xmldataget()
-jsondataget()
+xmldataget();
+jsondataget();
 
 // XML data fetch====================================================
 function xmldataget () {
@@ -72,7 +72,7 @@ function myFunction (xml) {
 // XML data fetch=========================== END ====================
 
 // JSON data fetch===================================================
-jsondataget()
+// jsondataget()
 function jsondataget () {
   const JSONdata = new XMLHttpRequest()
   JSONdata.onload = function () {

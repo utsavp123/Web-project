@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sym wedding Events </title>
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/style.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.2.1-web/css/all.css">
+    <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="./bootstrap-5.0.2-dist/js/jquery-3.6.3.min.js"></script>
+</head>
+
+<body style="
+    overflow-x: hidden;
+">
+    <header id="header-section" class="animated fadeInDown header-fixed">
+        <div class="overlay">
+            <div class="container">
+                <div class="row d-flex header-area">
+                    <div class="logo-section flex-grow-1 d-flex align-items-center">
+                        <a class="site-logo site-title"><img src="image/pngwing.com.png" height="50px " width="50px"
+                                alt="site-logo"></a>
+                    </div>
+                    <button class="navbar-toggler ml-auto collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars nav-show"></i>
+                    </button>
+                    <nav class="navbar navbar-expand-lg p-0">
+                        <div class="navbar-collapse showclass collapse" id="navbarSupportedContent1">
+                            <ul class="navbar-nav main-menu ml-auto">
+                                <li><a class="active" href="index.html">Home</a></li>
+                                <li class=""><a>PRICING</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="price.html?type=Classic">Classic</a></li>
+                                        <li><a href="price.html?type=Elegant">Elegant</a></li>
+                                        <li><a href="price.html?type=Premier">Premier </a></li>
+                                        <li><a href="price.html?type=Gold">Gold </a></li>
+                                        <li><a href="price.html?type=Elite">Elite </a></li>
+                                    </ul>
+                                </li>
+                                <li class=""><a href="/inspiration.html">Inspiration</a>
+                                </li>
+                                <li><a>Gallery</a></li>
+                                <li><a href="about.html">Contact us</a></li>
+
+                                <li class="">
+                                    <a class=""><span class="cmn-btn py-1" style="
+                                        line-height: inherit;
+                                    ">Login</span> </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="right-area header-action d-flex align-items-center">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="section"></div>
+
+</body>
+<script>
+    const XMLdata = new XMLHttpRequest()
+    XMLdata.onload = function () {
+        myFunction(this)
+    }
+    XMLdata.open('GET', 'tblweddingcategories.xml')
+    XMLdata.send()
+
+
+    function myFunction(xml) {
+        urlStr = window.location.search;
+        urlParam = new URLSearchParams(urlStr);
+        productCategory = urlParam.get('type');
+        tblweddingcategories = xml.responseXML
+        console.log(tblweddingcategories)
+        let section = ''
+        for (let i of tblweddingcategories.getElementsByTagName(
+            'tblweddingcategories'
+        )) {
+            if (i.getElementsByTagName('wedding_type')[0].childNodes[0].nodeValue == productCategory) {
+
+                section += `     <div class="single-item">
+            <div class="row">
+            <div class="col-lg-4 col-md-4 d-flex align-items-center">
+            <img class="top-img" src="image/${i.getElementsByTagName('preview_image')[0].childNodes[0].nodeValue
+                    }" alt="image">
+            </div>
+            <div class="col-lg-5 col-md-8 d-flex align-items-center justify-content-center">
+            <div class="mid-area">
+                <h4 class="text-center">${i.getElementsByTagName('wedding_type')[0].childNodes[0].nodeValue
+                    } </h4>
+                <div class="title-bottom d-flex">
+    
+                </div>
+                <h6 class="d-block text-center">Feature</h6>
+                <div class="single-box d-flex">`
+
+                for (let y of i.getElementsByTagName('feature')) {
+                    for (let z of y.getElementsByTagName('item')) {
+                        console.log(z.childNodes[0].nodeValue)
+                        section += `<div class="box-item  rounded-pill p-1">
+                  <span class="sub m-2">${z.childNodes[0].nodeValue}</span>
+              </div>`
+                    }
+                }
+                section += ` </div>
+            </div>
+            </div>
+            <div class="col-lg-3 d-flex align-items-center">
+                <div class="prize-area text-center">
+                <div class="contain-area">
+                    <span class="prize">prize</span>
+                    <h4 class="dollar"> $ ${i.getElementsByTagName('offer_price')[0].childNodes[0]
+                        .nodeValue
+                    } </h4>
+                    <a class="cmn-btn"  data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="weddingDetailsModalOpen (${i.getElementsByTagName('id')[0].childNodes[0].nodeValue
+                    })">View Details</a>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>`
+            }
+        }
+        document.getElementById('section').innerHTML = section
+    }
+    $(document).ready(() => {
+  $('.nav-show').click(() => {
+    $('.showclass').fadeToggle('show')
+    //  $(".show").fadeToggle()
+  })
+})
+</script>
+
+<script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+<script src="bootstrap-5.0.2-dist/js/fontawesome.js"></script>
+
+</html>
