@@ -53,7 +53,7 @@ function myFunction (xml) {
             <div class="prize-area text-center">
             <div class="contain-area">
                 <span class="prize">prize</span>
-                <h4 class="dollar"> $ ${
+                <h4 class="dollar"> Rs. ${
                   i.getElementsByTagName('offer_price')[0].childNodes[0]
                     .nodeValue
                 } </h4>
@@ -189,12 +189,12 @@ function weddingDetailsModalOpen (id) {
               <h6 class="prize my-2" style="
               color: #38a7ff;
           ">prize</h6>
-              <h5>  $${
+              <h5>  Rs. ${
                 i.getElementsByTagName('offer_price')[0].childNodes[0].nodeValue
               }
       <del style="
       font-size: 1rem;
-  ">$${i.getElementsByTagName('orignal_price')[0].childNodes[0].nodeValue}</del>
+  ">Rs. ${i.getElementsByTagName('orignal_price')[0].childNodes[0].nodeValue}</del>
       </h5>
 
           </div>

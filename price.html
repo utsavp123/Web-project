@@ -89,42 +89,49 @@
 
                 section += `     <div class="single-item pb-120 pt-120">
             <div class="row">
-            <div class="col-lg-4 col-md-4 d-flex align-items-center">
-            <img class="top-img" src="image/${i.getElementsByTagName('preview_image')[0].childNodes[0].nodeValue
+            <div class="col-lg-6 col-12 d-flex align-items-center">
+            <img class="top-img" style="
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px #9c8bff;
+" src="image/${i.getElementsByTagName('preview_image')[0].childNodes[0].nodeValue
                     }" alt="image">
             </div>
-            <div class="col-lg-5 col-md-8 d-flex align-items-center justify-content-center">
+            <div class="col-lg-6  pt-3 d-flex align-items-center ">
             <div class="mid-area">
                 <h4 class="text-center">${i.getElementsByTagName('wedding_type')[0].childNodes[0].nodeValue
                     } </h4>
                 <div class="title-bottom d-flex">
     
                 </div>
-                <h6 class="d-block text-center">Feature</h6>
-                <div class="single-box d-flex">`
+                <div class="prize-area ">
+                    <div class="contain-area">
+                        <h5 class="dollar text-center"> Rs. ${i.getElementsByTagName('offer_price')[0].childNodes[0]
+                        .nodeValue
+                    } <del style="
+                       font-size: 1rem;
+                          ">Rs. ${i.getElementsByTagName('orignal_price')[0].childNodes[0].nodeValue}</del></h5>
+                    </div>
+                </div>
+                <div class="single-box justify-content-center mt-2 d-flex">`
 
-                for (let y of i.getElementsByTagName('feature')) {
-                    for (let z of y.getElementsByTagName('item')) {
+                    for (let y of i.getElementsByTagName('feature')) {
+                     for (let z of y.getElementsByTagName('item')) {
                         console.log(z.childNodes[0].nodeValue)
-                        section += `<div class="box-item  rounded-pill p-1">
-                  <span class="sub m-2">${z.childNodes[0].nodeValue}</span>
+                        section += `<div class="box-item blueBtn m-2 rounded-pill p-1">
+                  <span class="sub m-1">${z.childNodes[0].nodeValue}</span>
               </div>`
                     }
                 }
                 section += ` </div>
-            </div>
-            </div>
-            <div class="col-lg-3 d-flex align-items-center">
-                <div class="prize-area text-center">
-                <div class="contain-area">
-                    <span class="prize">prize</span>
-                    <h4 class="dollar"> $ ${i.getElementsByTagName('offer_price')[0].childNodes[0]
+                <p class="mt-3 text-center">
+                    ${i.getElementsByTagName('description')[0].childNodes[0]
                         .nodeValue
-                    } </h4>
-                
-                </div>
+                    }
+               </p>     
+  
             </div>
-        </div>
+            </div>
+          
     </div>
     </div>`
             }
@@ -132,11 +139,11 @@
         document.getElementById('section').innerHTML = section
     }
     $(document).ready(() => {
-  $('.nav-show').click(() => {
-    $('.showclass').fadeToggle('show')
-    //  $(".show").fadeToggle()
-  })
-})
+        $('.nav-show').click(() => {
+            $('.showclass').fadeToggle('show')
+            //  $(".show").fadeToggle()
+        })
+    })
 </script>
 
 <script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
