@@ -310,7 +310,7 @@ iframe {
 .pt-120 {
   padding-top: 120px;
 }
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
   .pt-120 {
     padding-top: 60px;
   }
@@ -319,11 +319,11 @@ iframe {
   .pt-120 {
     padding-top: 50px;
   }
-}
+} */
 .pb-120 {
   padding-bottom: 120px;
 }
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
   .pb-120 {
     padding-bottom: 60px;
   }
@@ -332,7 +332,7 @@ iframe {
   .pb-120 {
     padding-bottom: 50px;
   }
-}
+} */
 body::-webkit-scrollbar {
   width: 4px;
 }
@@ -464,9 +464,11 @@ body::-webkit-scrollbar-thumb:hover {
     position: initial;
     opacity: 1;
     visibility: visible;
-    display: none;
+    color: #00fedf;
+    /* display: none; */
     -webkit-transition: none;
     transition: none;
+    background-color:#00000000 ;
   }
 }
 .menu-toggle {

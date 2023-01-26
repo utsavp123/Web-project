@@ -6346,6 +6346,30 @@ button.bg-dark:hover {
 .rounded {
   border-radius: 0.25rem !important;
 }
+.rounded-0 {
+  border-radius: 0!important
+}
+
+.rounded-1 {
+  border-radius: var(--bs-border-radius-sm)!important
+}
+
+.rounded-2 {
+  border-radius: var(--bs-border-radius)!important
+}
+
+.rounded-3 {
+  border-radius: var(--bs-border-radius-lg)!important
+}
+
+.rounded-4 {
+  border-radius: var(--bs-border-radius-xl)!important
+}
+
+.rounded-5 {
+  border-radius: var(--bs-border-radius-2xl)!important
+}
+
 .rounded-top {
   border-top-left-radius: 0.25rem !important;
   border-top-right-radius: 0.25rem !important;
@@ -10244,7 +10268,7 @@ a.text-dark:hover {
   background-repeat: no-repeat;
   background-position: bottom;
   padding-bottom: 440px;
-  margin-top: -40px;
+  /* margin-top: -40px; */
 }
 #about-us-section .section-header .title,
 #about-us-section .section-header p {
@@ -12629,9 +12653,9 @@ a.text-dark:hover {
   #features-section .single-item .img-area img {
     width: 60%;
   }
-  #about-us-section .overlay {
+  /* #about-us-section .overlay {
     margin-top: -10px;
-  }
+  } */
   #call-action .right-area {
     text-align: center;
   }

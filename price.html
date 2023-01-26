@@ -61,7 +61,9 @@
             </div>
         </div>
     </header>
-    <div id="section"></div>
+    <div id="section" class="container ">
+
+    </div>
 
 </body>
 <script>
@@ -85,7 +87,7 @@
         )) {
             if (i.getElementsByTagName('wedding_type')[0].childNodes[0].nodeValue == productCategory) {
 
-                section += `     <div class="single-item">
+                section += `     <div class="single-item pb-120 pt-120">
             <div class="row">
             <div class="col-lg-4 col-md-4 d-flex align-items-center">
             <img class="top-img" src="image/${i.getElementsByTagName('preview_image')[0].childNodes[0].nodeValue
@@ -119,8 +121,6 @@
                     <h4 class="dollar"> $ ${i.getElementsByTagName('offer_price')[0].childNodes[0]
                         .nodeValue
                     } </h4>
-                    <a class="cmn-btn"  data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="weddingDetailsModalOpen (${i.getElementsByTagName('id')[0].childNodes[0].nodeValue
-                    })">View Details</a>
                 
                 </div>
             </div>
