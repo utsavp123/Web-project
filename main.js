@@ -1,8 +1,8 @@
 // Data loading ================================================
 let tblweddingcategories
 let tblpostwedding
-xmldataget();
-jsondataget();
+xmldataget()
+jsondataget()
 
 // XML data fetch====================================================
 function xmldataget () {
@@ -15,7 +15,7 @@ function xmldataget () {
 }
 function myFunction (xml) {
   tblweddingcategories = xml.responseXML
-  console.log(tblweddingcategories)
+  // console.log(tblweddingcategories)
   let section = ''
   for (let i of tblweddingcategories.getElementsByTagName(
     'tblweddingcategories'
@@ -40,7 +40,7 @@ function myFunction (xml) {
 
     for (let y of i.getElementsByTagName('feature')) {
       for (let z of y.getElementsByTagName('item')) {
-        console.log(z.childNodes[0].nodeValue)
+        // console.log(z.childNodes[0].nodeValue)
         section += `<div class="box-item  rounded-pill p-1">
               <span class="sub m-2">${z.childNodes[0].nodeValue}</span>
           </div>`
@@ -83,46 +83,44 @@ function jsondataget () {
 }
 function jsonDataFetch (xml) {
   tblpostwedding = xml.responseText
-  console.log(JSON.parse(tblpostwedding).data)
   section = ''
-  section += `<div id="accordion" class="row justify-content-around w-100">`
-  section += `</div>`
-  document.getElementById('postWedding').innerHTML = section
+  // section += `<div id="accordion" class="row justify-content-around w-100">`
+  // section += `</div>`
+  // document.getElementById('postWedding').innerHTML = section
+
+  // for (let i of JSON.parse(tblpostwedding).data) {
+  //   let id = 'collapse' + i.wedding_type
+  //   if (!document.getElementById(id)) {
+  //     section1 = `<div class="cmn-btn btn-collapse col-md col-5 m-1">
+  //         <div class="text-center">
+  //             <a class="btn" data-bs-toggle="collapse" style="
+  //             color: white;
+  //         " href="#collapse${i.wedding_type}">
+  //             ${i.wedding_type}
+  //             </a>
+  //         </div>
+
+  //     </div>
+
+  //     <div id="collapse${i.wedding_type}" class="collapse top-100" data-bs-parent="#accordion" style="position: absolute;z-index: -1;top: 110px;left: 0px;right: 0px;min-height: 400px;">
+  //     <div class="card-body" >
+  //         <div class="row cus-m" id="inner${i.wedding_type}">
+
+  //         </div>
+  //     </div>
+  // </div>`
+  //     document.getElementById('postWedding').innerHTML += section1
+  //   }
+  // }
 
   for (let i of JSON.parse(tblpostwedding).data) {
-    let id = 'collapse' + i.wedding_type
-    if (!document.getElementById(id)) {
-      section1 = `<div class="cmn-btn btn-collapse col-md col-5 m-1">
-          <div class="text-center">
-              <a class="btn" data-bs-toggle="collapse" style="
-              color: white;
-          " href="#collapse${i.wedding_type}">
-              ${i.wedding_type}
-              </a>
-          </div>
-         
-      </div>
-      
-      <div id="collapse${i.wedding_type}" class="collapse top-100" data-bs-parent="#accordion" style="position: absolute;z-index: -1;top: 110px;left: 0px;right: 0px;min-height: 400px;">
-      <div class="card-body" >
-          <div class="row cus-m" id="inner${i.wedding_type}">
-              
-          </div>
-      </div>
-  </div>`
-      document.getElementById('accordion').innerHTML += section1
-    }
-  }
-
-  for (let i of JSON.parse(tblpostwedding).data) {
-    let id = 'collapse' + i.wedding_type
-    if (document.getElementById(id)) {
-      section = `<div class="col-lg-3 col-md-6 mt-3">
+    console.log(i)
+    section = `<div class="col-lg-3 col-md-6 mt-3">
         <div class="single-item" style="
         box-shadow: 0px 0px 12px 0px #4609c3;
      ">
             <div class="img-area text-center">
-                <img class="img-area m-0" src="image/events/${i.preview_image}" alt="image">
+                <img class="img-area m-0" style="max-height:300px;width: 100%;"  src="image/events/${i.preview_image}" alt="image">
             </div>
             <div class=" text-center">
                 <h5 class="my-2">${i.title}</h5>
@@ -135,14 +133,9 @@ function jsonDataFetch (xml) {
                 </div>
           </div>
         </div>`
-    }
-    id = 'inner' + i.wedding_type
-    document.getElementById(id).innerHTML += section
+    document.getElementById('postWedding').innerHTML += section
     $(document).ready(() => {
-      $('.btn-collapse').click(() => {
-        // val = $(document).scrollTop().valueOf()
-        // window.scrollTo(0, val + 200)
-      })
+      $('.btn-collapse').click(() => {})
 
       $('#collapseElite').first().addClass('show')
     })
@@ -180,7 +173,7 @@ function weddingDetailsModalOpen (id) {
               <div  class="row my-3">`
       for (let y of i.getElementsByTagName('feature')) {
         for (let z of y.getElementsByTagName('item')) {
-          console.log(z.childNodes[0].nodeValue)
+          // console.log(z.childNodes[0].nodeValue)
           section += `   <span class="blueBtn m-2  ">${z.childNodes[0].nodeValue}</span>`
         }
       }
@@ -194,7 +187,9 @@ function weddingDetailsModalOpen (id) {
               }
       <del style="
       font-size: 1rem;
-  ">Rs. ${i.getElementsByTagName('orignal_price')[0].childNodes[0].nodeValue}</del>
+  ">Rs. ${
+    i.getElementsByTagName('orignal_price')[0].childNodes[0].nodeValue
+  }</del>
       </h5>
 
           </div>
