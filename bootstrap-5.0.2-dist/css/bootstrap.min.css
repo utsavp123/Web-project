@@ -10320,9 +10320,9 @@ a.text-dark:hover {
 }
 #team-section .single-item .social-area .border-area {
   border-left: 1px solid rgba(255, 255, 255, 0.2);
-  border-right: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 0 12px;
-  margin: 0 12px;
+  /* border-right: 1px solid rgba(255, 255, 255, 0.2); */
+  padding: 0 0px 0px 5px;
+  margin: 0 0px 0px 5px;
 }
 #team-section .single-item .bottom-area h5 {
   margin: 30px 0 20px;
