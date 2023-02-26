@@ -69,10 +69,6 @@ function myFunction (xml) {
   }
   document.getElementById('section').innerHTML = section
 }
-// XML data fetch=========================== END ====================
-
-// JSON data fetch===================================================
-// jsondataget()
 function jsondataget () {
   const JSONdata = new XMLHttpRequest()
   JSONdata.onload = function () {
@@ -84,35 +80,6 @@ function jsondataget () {
 function jsonDataFetch (xml) {
   tblpostwedding = xml.responseText
   section = ''
-  // section += `<div id="accordion" class="row justify-content-around w-100">`
-  // section += `</div>`
-  // document.getElementById('postWedding').innerHTML = section
-
-  // for (let i of JSON.parse(tblpostwedding).data) {
-  //   let id = 'collapse' + i.wedding_type
-  //   if (!document.getElementById(id)) {
-  //     section1 = `<div class="cmn-btn btn-collapse col-md col-5 m-1">
-  //         <div class="text-center">
-  //             <a class="btn" data-bs-toggle="collapse" style="
-  //             color: white;
-  //         " href="#collapse${i.wedding_type}">
-  //             ${i.wedding_type}
-  //             </a>
-  //         </div>
-
-  //     </div>
-
-  //     <div id="collapse${i.wedding_type}" class="collapse top-100" data-bs-parent="#accordion" style="position: absolute;z-index: -1;top: 110px;left: 0px;right: 0px;min-height: 400px;">
-  //     <div class="card-body" >
-  //         <div class="row cus-m" id="inner${i.wedding_type}">
-
-  //         </div>
-  //     </div>
-  // </div>`
-  //     document.getElementById('postWedding').innerHTML += section1
-  //   }
-  // }
-
   for (let i of JSON.parse(tblpostwedding).data) {
     console.log(i)
     section = `<div class="col-lg-3 col-md-6 mt-3">

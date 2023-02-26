@@ -17,19 +17,117 @@
         body::-webkit-scrollbar {
             display: none;
         }
+
+        /* @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap'); */
+
+        :root {
+            --succes-color: #2ecc71;
+            ;
+            --error-color: #e74c3c;
+        }
+
+
+        * {
+            box-sizing: border-box;
+        }
+
+        /* body {
+
+            background-color: #f9fafb;
+            font-family: 'Open Sans', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        } */
+
+        .container-coustom {
+            /* background-color: #fff; */
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            /* width: 500px; */
+        }
+
+        h2 {
+            text-align: center;
+            margin: 0 0 20px;
+        }
+
+        .form {
+            padding: 30px 40px;
+        }
+
+        .form-control-custom {
+            margin-bottom: 10px;
+            padding-bottom: 20px;
+            position: relative;
+        }
+
+        .form-control-custom label {
+            color: #ffffff;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-control-custom input {
+            border: 2px solid #f0f0f0;
+            border-radius: 4px;
+            display: block;
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        .form-control-custom input:focus {
+            outline: 0;
+            border-color: #777;
+
+        }
+
+        .form-control-custom.success input {
+            border-color: var(--succes-color);
+        }
+
+        .form-control-custom.error input {
+            border-color: var(--error-color);
+        }
+
+        .form-control-custom small {
+            color: var(--error-color);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            visibility: hidden;
+        }
+
+        .form-control-custom.error small {
+            visibility: visible;
+        }
+
+        .form button {
+            cursor: pointer;
+            background-color: #3498db;
+            border: 2px solid #3498db;
+            border-radius: 4px;
+            color: #fff;
+            display: block;
+            padding: 10px;
+            font-size: 16px;
+            margin-top: 20px;
+            width: 100%;
+        }
     </style>
-
 </head>
-
 <body style="
     overflow-x: hidden;
 ">
     <header id="header-section" class="animated fadeInDown header-fixed">
         <div class="overlay">
-            <div class="container">
+            <div class="container ">
                 <div class="row d-flex header-area">
                     <div class="logo-section flex-grow-1 d-flex align-items-center">
-                        <a class="site-logo site-title"><img src="image/pngwing.com.png" height="50px " width="50px"
+                        <a class="site-logo site-title"><img src="image/sym-low-resolution-logo-color-on-transparent-background (2).png" height="100px" width="100px"
                                 alt="site-logo"></a>
                     </div>
                     <button class="navbar-toggler ml-auto collapsed" type="button" data-bs-toggle="collapse"
@@ -40,22 +138,22 @@
                     <nav class="navbar navbar-expand-lg p-0">
                         <div class="navbar-collapse showclass collapse" id="navbarSupportedContent1">
                             <ul class="navbar-nav main-menu ml-auto">
-                                <li><a  href="index.html">Home</a></li>
-                                <li class="mainMenu"><a>PRICING</a>
+                                <li><a class="align-items-center d-flex h-100" href="index.html">Home</a></li>
+                                <li class="mainMenu"><a class="align-items-center d-flex h-100">PRICING</a>
                                     <ul class="sub-menu">
-                                        <li><a href="price.html?type=Classic">Classic</a></li>
-                                        <li><a href="price.html?type=Elegant">Elegant</a></li>
-                                        <li><a href="price.html?type=Premier">Premier </a></li>
-                                        <li><a href="price.html?type=Gold">Gold </a></li>
-                                        <li><a href="price.html?type=Elite">Elite </a></li>
+                                        <li><a class="align-items-center d-flex h-100" href="price.html?type=Classic">Classic</a></li>
+                                        <li><a class="align-items-center d-flex h-100" href="price.html?type=Elegant">Elegant</a></li>
+                                        <li><a class="align-items-center d-flex h-100" href="price.html?type=Premier">Premier </a></li>
+                                        <li><a class="align-items-center d-flex h-100" href="price.html?type=Gold">Gold </a></li>
+                                        <li><a class="align-items-center d-flex h-100" href="price.html?type=Elite">Elite </a></li>
                                     </ul>
                                 </li>
-                                <li class=""><a href="inspiration.html">Inspiration</a>
+                                <li class=""><a class="align-items-center d-flex h-100" href="inspiration.html">Inspiration</a>
                                 </li>
-                                <li><a href="about.html">Contact us</a></li>
+                                <li><a class="align-items-center d-flex h-100" href="about.html">About Us</a></li>
 
                                 <li class="active">
-                                    <a class="" href="signin.html"><span class="cmn-btn py-1" style="
+                                    <a class="align-items-center d-flex h-100"  href="signin.html"><span class="cmn-btn py-1" style="
                                         line-height: inherit;
                                     ">Login</span> </a>
                                 </li>
@@ -68,36 +166,56 @@
             </div>
         </div>
     </header>
-    <section id="" class="pt-120">
-        <div class="container col-md-7 mx-auto" style="min-height: calc(100vh - 414px);" style="
-        min-height: calc(100vh - 414px);
-    ">
-            <h3 class="text-center" id="loginheader">Login</h3>
-            <h3 class="text-center" id="signupheader">Sign Up</h3>
-            <form action="">
-                <div class="form-floating m-3">
-                    <input type="text" id="name" class="form-control" placeholder="Name">
-                    <!-- <label for="name">Name</label> -->
-                </div>
-                <div class="form-floating m-3">
-                    <input type="tel" id="phoneno" class="form-control" placeholder="Phone Number">
-                    <!-- <label for="phoneno">Phone Number</label> -->
-                </div>
-                <div class="form-floating m-3">
-                    <input type="email" id="email" class="form-control" placeholder="email">
-                    <!-- <label for="email">Email</label> -->
-                </div>
-                <div class="form-floating m-3">
-                    <input type="password" id="password" class="form-control" placeholder="password">
-                    <!-- <label for="password">Password</label> -->
-                </div>
-            </form>
-            <p class="text-center" id="signupmsg">Don't have account? <a href="signin.html?activity=signup"
-                    class="text-decoration-none">Sign Up</a></p>
+    <div class="container container-coustom pt-120" id="registration">
+        <form id="form" class="form">
+            <h2>Register With Us</h2>
+            <div class="form-control-custom">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" placeholder="Enter Username">
+                <small>Error Message</small>
+            </div>
+            <div class="form-control-custom">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" placeholder="Enter email">
+                <small>Error Message</small>
+            </div>
+            <div class="form-control-custom">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Enter password">
+                <small>Error Message</small>
+            </div>
+            <div class="form-control-custom">
+                <label for="password2">Confirm Password</label>
+                <input type="password" name="Confirm-Password" id="password2" placeholder="Enter password again">
+                <small>Error Message</small>
+            </div>
+            <!-- <p class="text-center" id="signupmsg">Don't have account? <a href="signin.html?activity=signup"
+                    class="text-decoration-none">Sign Up</a></p> -->
             <p class="text-center" id="loginmsg">Already have account? <a href="signin.html"
                     class="text-decoration-none">Log In</a></p>
-        </div>
-    </section>
+            <button class="w-25 m-auto">Submit</button>
+        </form>
+    </div>
+    <div class="container container-coustom pt-120" id="login-form">
+        <form id="form2" class="form">
+            <h2>Login With Us</h2>
+            <div class="form-control-custom">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username2" placeholder="Enter Username">
+                <small>Error Message</small>
+            </div>
+            <div class="form-control-custom">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password3" placeholder="Enter password">
+                <small>Error Message</small>
+            </div>
+            <p class="text-center" id="signupmsg">Don't have account? <a href="signin.html?activity=signup"
+                    class="text-decoration-none">Sign Up</a></p>
+            <!-- <p class="text-center" id="loginmsg">Already have account? <a href="signin.html"
+                    class="text-decoration-none">Log In</a></p> -->
+            <button class="w-25 m-auto">Submit</button>
+        </form>
+    </div>
 
 
 </body>
@@ -112,18 +230,93 @@
     urlParam = new URLSearchParams(urlstr);
     activity = urlParam.get('activity')
     if (activity == 'signup') {
-        // console.log("hello");
-        $('#signupmsg').hide()
+        console.log("hello");
+        $('#login-form').hide()
+        $('#registration').show()
         $('#loginheader').hide()
-        $('#loginmsg').show()
+        // $('#loginmsg').show()
     }
     else {
-        $('#phoneno').hide()
+        $('#login-form').show()
+        $('#registration').hide()
         $('#name').hide()
         $('#signupheader').hide()
-        $('#signupmsg').show()
-        $('#loginmsg').hide()
+        // $('#signupmsg').show()
+        // $('#loginmsg').hide()
     }
+    $(document).ready(() => {
+        $('.nav-show').click(() => {
+            $('.showclass').fadeToggle('show')
+        })
+    })
+    const form = document.getElementById('form');
+    const form2 = document.getElementById('form2');
+    const username = document.getElementById('username');
+    const username2 = document.getElementById('username2');
+    const email = document.getElementById('email');
+    const password = document.getElementById('password');
+    const password3 = document.getElementById('password3');
+    const password2 = document.getElementById('password2');
+    function showError(input, message) {
+        const formControl = input.parentElement;
+        formControl.className = 'form-control-custom error';
+        const small = formControl.querySelector('small');
+        small.innerText = message;
+    }
+    function showSucces(input) {
+        const formControl = input.parentElement;
+        formControl.className = 'form-control-custom success';
+    }
+    function checkEmail(input) {
+        const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        if (re.test(input.value.trim())) {
+            showSucces(input)
+        } else {
+            showError(input, 'Email is not invalid');
+        }
+    }
+    function checkRequired(inputArr) {
+        inputArr.forEach(function (input) {
+            if (input.value.trim() === '') {
+                showError(input, `${getFieldName(input)} is required`)
+            } else {
+                showSucces(input);
+            }
+        });
+    }
+    function checkLength(input, min, max) {
+        if (input.value.length < min) {
+            showError(input, `${getFieldName(input)} must be at least ${min} characters`);
+        } else if (input.value.length > max) {
+            showError(input, `${getFieldName(input)} must be les than ${max} characters`);
+        } else {
+            showSucces(input);
+        }
+    }
+    function getFieldName(input) {
+        return input.name.charAt(0).toUpperCase() + input.name.slice(1);
+    }
+    function checkPasswordMatch(input1, input2) {
+        if (input1.value !== input2.value) {
+            showError(input2, 'Passwords do not match');
+        }
+    }
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        checkRequired([username, email, password, password2]);
+        checkLength(username, 3, 15);
+        checkLength(password, 6, 25);
+        checkEmail(email);
+        checkPasswordMatch(password, password2);
+    });
+    form2.addEventListener('submit', function (e) {
+        e.preventDefault();
+        checkRequired([username2, password3]);
+        checkLength(username2, 3, 15);
+        checkLength(password3, 6, 25);
+        // checkEmail(email);
+        // checkPasswodMatch(password, password2);
+    });
 </script>
 
 </html>
