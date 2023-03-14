@@ -10298,7 +10298,7 @@ a.text-dark:hover {
   overflow: hidden;
 }
 #team-section .single-item .top-item::before {
-  background-image: url(../images/team-item-bg.png);
+  /* background-image: url(../../image/download.jpg); */
   background-repeat: no-repeat;
   position: absolute;
   background-size: cover;
